@@ -67,8 +67,9 @@
             this.GamePan.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GamePan.Location = new System.Drawing.Point(0, 0);
             this.GamePan.Name = "GamePan";
-            this.GamePan.Size = new System.Drawing.Size(544, 318);
+            this.GamePan.Size = new System.Drawing.Size(500, 300);
             this.GamePan.TabIndex = 1;
+            this.GamePan.Visible = false;
             // 
             // Field2Pan
             // 
@@ -94,7 +95,7 @@
             this.StatPan.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.StatPan.Location = new System.Drawing.Point(0, 0);
             this.StatPan.Name = "StatPan";
-            this.StatPan.Size = new System.Drawing.Size(544, 50);
+            this.StatPan.Size = new System.Drawing.Size(500, 50);
             this.StatPan.TabIndex = 1;
             // 
             // LongLab
@@ -102,9 +103,9 @@
             this.LongLab.AutoSize = true;
             this.LongLab.Location = new System.Drawing.Point(336, 9);
             this.LongLab.Name = "LongLab";
-            this.LongLab.Size = new System.Drawing.Size(97, 24);
+            this.LongLab.Size = new System.Drawing.Size(81, 24);
             this.LongLab.TabIndex = 0;
-            this.LongLab.Text = "Длина: ***";
+            this.LongLab.Text = "Длина:0";
             // 
             // SetSizeBut
             // 
@@ -146,6 +147,7 @@
             this.MainMenuPan.Name = "MainMenuPan";
             this.MainMenuPan.Size = new System.Drawing.Size(500, 300);
             this.MainMenuPan.TabIndex = 0;
+            this.MainMenuPan.Visible = false;
             // 
             // GoSetSizeBut
             // 
@@ -172,7 +174,7 @@
             // 
             // RunningTim
             // 
-            this.RunningTim.Interval = 250;
+            this.RunningTim.Interval = 50;
             this.RunningTim.Tick += new System.EventHandler(this.RunningTim_Tick);
             // 
             // Form1
@@ -181,6 +183,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(500, 300);
             this.Controls.Add(this.SetSizePan);
+            this.Controls.Add(this.MainMenuPan);
+            this.Controls.Add(this.GamePan);
             this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "Form1";
